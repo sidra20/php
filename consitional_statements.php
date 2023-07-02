@@ -48,7 +48,68 @@ else{
 
 echo(!($i!=$j));
 
+echo "<br>";
 //if else if
+//marksheet
+$php = 70;
+$java = 90;
+$kotlin = 100;
+$total = $php + $java + $kotlin;
+$percentage = $total/300 * 100;
 
+if($percentage >=80 && $percentage<=100){
+    echo "A1 grade";
+}
+else if($percentage >=70 && $percentage<80){
+    echo "A grade";
+}
+else if($percentage >=60 && $percentage<70){
+
+    echo "B grade";
+}
+else{
+    echo "fail";
+}
+
+echo "<br>";
 //nested if
+if($percentage >=80){
+    if($percentage<=100){
+        echo "a1 grade";
+    }
+}
+else if($percentage >=70){
+    if($percentage<80){
+        echo "A grade";
+    }
+}
+else{
+    echo "fail";
+}
+
+
+//switch
+echo "<br>";
+$vowel = 'p';
+switch($vowel){
+    case 'a':
+        echo "Vowel";
+        break;
+    case 'e':
+        echo "Vowel";
+        break;
+    case 'i':
+        echo "Vowel";
+        break;
+    case 'o':
+        echo "Vowel";
+        break;
+    case 'u':
+        echo "Vowel";
+        break;
+    default:
+        echo "Cosnonet";
+        break;
+
+}
 ?>
