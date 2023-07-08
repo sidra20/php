@@ -64,4 +64,11 @@ foreach($students as $stu){
         echo $key . " = " . $value ."<br>";
     }
 }
+
+//vowel count
+
+$statemnet = "Sidra is a girl";
+
+echo "There are <strong>".preg_match_all('/[aeiou]/i',$statemnet,$matches)." vowels</strong> in the string <strong>".$statemnet."</strong>";
+
 ?>
